@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+body {
+    background-color: #ccc;
+    text-align: center;
+}
+
+h1 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin: 50px auto;
+    text-shadow: 2px 2px #eee;
+}
+
+.container {
+    border: 5px solid #fff;
+    margin: 10px auto;
+    overflow: auto;
+    width: 600px;
+}
+
+.thumb {
+    border: 2px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    width: 200px;
+}
+
+.thumb:hover {
+    opacity: .5;
+}
+
+.fade {
+    /* Forwards agar animasi berhenti di keadaan akhir */
+    animation: fadeIn .5s forwards; 
+    opacity: 0;
+}
+
+.active {
+    opacity: .5;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
